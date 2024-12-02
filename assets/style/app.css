@@ -1,5 +1,30 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+         url('fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News701 BT';
+    src: url('fonts/News701-BT.woff2') format('woff2'),
+         url('fonts/News701-BT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News706 BT';
+    src: url('fonts/News706-BT.woff2') format('woff2'),
+         url('fonts/News706-BT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background: linear-gradient(rgb(245, 245, 245) 0%, #6394ed 20%);
+    font-family: 'Poppins', 'News701 BT', 'News706 BT', sans-serif;
+    background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 0%);
 }
 
 .navbar {
@@ -307,6 +332,20 @@ body {
         bottom: -20px;
     }
 
+    .modal-dialog {
+        color: black;
+        text-shadow: none;
+    }
+
+    .modal-backdrop {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    body.modal-open {
+        padding-right: 0 !important;
+    }
+
     .card {
         margin: 20px;
         padding: 5px;
@@ -332,9 +371,4 @@ body {
         bottom: -5px;
     }
 
-    .modal-dialog {
-        color: black;
-        text-shadow: none;
-        background-color: black;
-    }
 }
