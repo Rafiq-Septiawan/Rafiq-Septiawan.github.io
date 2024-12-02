@@ -15,36 +15,27 @@
     <link rel="stylesheet" href="assets/style/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Rafiq Portofolio</title>
+    <title>Rafiq Septiawan</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#biodata">BIODATA</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#project">PROJECT</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#sertifikat">SERTIKASI</a>
-                  </li>
-                  <li class="nav-item">
+      <div class="container-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biodata">BIODATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">PROJECT</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">KONTAK</a>
                 </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-      <section>
+            </ul>
+        </div>
+    </nav>
         <div classs="container">
           <div class="profile">
             <img class="rounded-circle profileimage" src="assets/image/profileimage.jpg" alt="">
@@ -52,28 +43,20 @@
             <h5 class="h5">Grapich Desainer</h5>
         </div>
         </div>
-      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" 
         d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,128C560,96,640,64,720,69.3C800,75,880,117,960,160C1040,203,1120,245,1200,224C1280,203,1360,117,1400,74.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
       </svg>
       
       <!-- BIODATA -->
       <div id="biodata" class="biodata">
-        <h1 class="text-center mb-4">BIODATA</h1>
+        <h1 class="text-center mb-4 text_biodata">BIODATA</h1>
         <div class="container">
           <div class="isi">
             <p>
-              Nama saya Rafiq Septiawan, lahir di Tangerang pada tanggal 26 September 2004. 
-              Ketertarikan saya pada komputer muncul sejak kelas 2 SD ketika saya mulai belajar 
-              menggunakan komputer dan mengeksplorasi berbagai hal menarik yang dapat dilakukan 
-              dengan teknologi ini. Sejak itu, minat saya berkembang, terutama dalam bidang desain dan jaringan.
-              Ketika melanjutkan pendidikan ke SMK, saya memilih jurusan Teknik Komputer dan Jaringan (TKJ). 
-              Di sini, saya mendalami berbagai aspek teknis, termasuk jaringan komputer, yang menjadi mata pelajaran favorit saya. 
-              Pengalaman ini mengasah keterampilan saya dalam konfigurasi jaringan dan memperluas pengetahuan saya tentang teknologi informasi.
-              Saat ini, saya melanjutkan studi di Jurusan Teknologi Informasi (TI) di perguruan tinggi, 
-              di mana saya terus memperdalam wawasan dan kemampuan di bidang ini. Selain belajar secara formal, 
-              saya juga aktif mengikuti seminar dan kegiatan lain yang berhubungan dengan bidang teknologi informasi 
-              untuk menambah pengetahuan dan memperluas jaringan profesional.
+            Saya Rafiq Septiawan, lahir di Tangerang, 26 September 2004. Ketertarikan pada komputer muncul sejak kelas 2 SD, 
+            khususnya dalam desain dan jaringan. Saat SMK, saya memilih jurusan Teknik Komputer dan Jaringan (TKJ) dan mendalami 
+            konfigurasi jaringan. Kini, saya melanjutkan studi di Jurusan Teknologi Informasi (TI) dan aktif mengikuti seminar 
+            serta kegiatan terkait teknologi untuk memperluas pengetahuan dan jaringan profesional.
             </p>
           </div>
         </div>
@@ -84,12 +67,12 @@
         </svg>
 
       <!-- RIWAYAT PENDIDIKAN -->
-      <section id="riwayatpendidikan" class="riwayatpendidikan">
-        <h1 class="text-center mb-5">RIWAYAT PENDIDIKAN</h1>
+      <div id="riwayatpendidikan" class="riwayatpendidikan">
+        <h1 class="text-center mb-5 text_riwayatpendidikan">RIWAYAT PENDIDIKAN</h1>
         <div class="container text-center">
             <div class="row  riwayatpendidikan_a">
                 <!-- TK -->
-                <div class="col">
+                <div class="col-sm mb-3">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTK">
                       PENDIDIKAN TK
                   </button>
@@ -117,7 +100,7 @@
                 </div>
                 
                 <!-- SD -->
-                <div class="col">
+                <div class="col-sm mb-3">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSD">
                       PENDIDIKAN SD
                   </button>
@@ -143,7 +126,7 @@
                 </div>
 
                 <!-- Bagian SMP -->
-                <div class="col">
+                <div class="col-sm mb-3">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSMP">
                       PENDIDIKAN SMP
                   </button>
@@ -169,7 +152,7 @@
                 </div>
  
                 <!-- SMA -->
-                <div class="col">
+                <div class="col-sm mb-3">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSMA">
                       PENDIDIKAN SMA
                   </button>
@@ -196,7 +179,7 @@
                 </div>
                 
                 <!-- UNIVERSITAS -->
-                <div class="col-lg-3">
+                <div class="col-sm">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKampus">
                     PENDIDIKAN UNIVERSITAS
                   </button>
@@ -221,121 +204,104 @@
                     </div>
                   </div>
                 </div>
-
             </div>
           </div>
-      </section>
+       </div>
+
+       <!-- BAGIAN PROJECT -->
+       <main class="main-article-project">
+        <header id="project" class="project">
+          <h1 class="text_project">PROJECT</h1>
+        </header>
+
+        <div class="row">
+          <!-- Kartu 1 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/KKK.png" class="KKK" alt="">
+              <div class="card-body">
+                <h5 class="card-title-1">Vektor Kijang Kapsul</h5>
+              </div>
+            </div>
+          </div>
       
-      <section id="project" class="project">
-            <h1 style="color: white;" 
-                class="text-center mb-2">PROJECT</h1>
-            <!-- BARIS PERTAMA -->
-            <div class="container">
-              <div class="row d-flex justify-content-center">
-                <div class="col-sm-3 mb-3">
-                  <div class="card">
-                    <img src="assets/image/project/KKK.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Vektor Kijang Kapsul</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="card">
-                    <img src="assets/image/project/IE.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Vektor Isuzu Elf</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="card">
-                    <img src="assets/image/project/GL.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title"> Vektor Grand Livina</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="card">
-                    <img src="assets/image/project/F.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Vektor Fortuner</h5>
-                    </div>
-                  </div>
-                </div>
+          <!-- Kartu 2 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/IE.png" class="IE" alt="">
+              <div class="card-body">
+                <h5 class="card-title-1">Vektor Isuzu Elf</h5>
               </div>
             </div>
-
-            <!--BARIS KEDUA-->
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-3 mb-4">
-                   <div class="card-group">
-                     <div class="card">
-                       <img src="assets/image/project/PHP.png" alt="">
-                         <div class="card-body">
-                           <h5 class="card-title">Pamflet Hari Pahlawan</h5>
-                       </div>
-                     </div>
-                   </div>
-                </div>
-   
-             <div class="col-sm-3">
-                 <div class="card-group">
-                     <div class="card">
-                       <img src="assets/image/project/RI.png" alt="">
-                         <div class="card-body">
-                           <h5 class="card-title">Pamflet Hari Kemerdekaan RI</h5>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-   
-             <div class="col-sm-3">
-               <div class="card-group">
-                   <div class="card">
-                     <img src="assets/image/project/IA.png" alt="">
-                       <div class="card-body">
-                         <h5 class="card-title">Pamflet Hari Raya Idul Adha</h5>
-                       </div>
-                   </div>
-               </div>
-             </div>
-              
-             <div class="col-sm-3">
-                <div class="card-group">
-                   <div class="card">
-                     <img src="assets/image/project/HNY.png" alt="">
-                       <div class="card-body">
-                         <h5 class="card-title">Pamflet Happy New Years</h5>
-                       </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
+      
+          <!-- Kartu 3 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/GL.png" class="card-img-top GL" alt="">
+              <div class="card-body">
+                <h5 class="card-title-2">Vektor Grand Livina</h5>
               </div>
-            
-            <!-- BARIS KETIGA -->
-            <div class="container">
-              <div class="card mb-3">
-                <img src="assets/image/project/BL2.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Banner Laundry</h5>
-                      <p class="card-text"></p>
-                    </div>
-                </div>
             </div>
-      </section>
+          </div>
+      
+          <!-- Kartu 4 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/F.png" class="card-img-top F" alt="">
+              <div class="card-body">
+                <h5 class="card-title-2">Vektor Fortuner</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Kartu 5 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/PHP.png" class="PHP" alt="">
+              <div class="card-body">
+                <h5 class="card-title-3">Pamflet Hari Pahlawan</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Kartu 6 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/RI.png" class="RI" alt="">
+              <div class="card-body">
+                <h5 class="card-title-3">Pamflet Hari Kemerdekaan RI</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Kartu 7 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/IA.png" class="IA" alt="">
+              <div class="card-body">
+                <h5 class="card-title-4">Pamflet Hari Raya Idul Adha</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Kartu 8 -->
+          <div class="col-sm-3 mb-3">
+            <div class="card">
+              <img src="assets/image/project/HNY.png" class="HNY" alt="">
+              <div class="card-body">
+                <h5 class="card-title-4">Pamflet Happy New Year</h5>
+              </div>
+            </div>
+          </div>
+    
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" 
         d="M0,128L80,117.3C160,107,320,85,480,112C640,139,800,213,960,224C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
       </svg>
 
+      <!-- BAGIAN KONTAK -->
       <section id="contact" class="contact">
-        <h1 class="text-center">KONTAK</h1>
+        <h1 class="text_contact">KONTAK</h1>
         <div class="container">
           <form class="isifo">
             <div class="mb-5">

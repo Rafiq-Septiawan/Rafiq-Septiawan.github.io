@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(245, 245, 245) 0%,  rgb(99, 148, 237) 20%);
+    background: linear-gradient(rgb(245, 245, 245) 0%, #6394ed 20%);
 }
 
 .navbar {
@@ -10,11 +10,8 @@ body {
     text-align: center;
     font-size: 15px;
     font-family: news701 bt;
-}
-
-.logo {
-    width: 70px;
-    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .profile {
@@ -28,11 +25,6 @@ body {
 .profileimage {
     width: 10px;
     height: 190px;
-}
-
-.project {
-    font-family: faster stroker;
-    padding-top: 50px;
 }
 
 .card {
@@ -67,21 +59,21 @@ body {
 }
 
 .biodata {
-    border: none;
-    margin-top: -10px;
+    position: relative;
+    top: -5px;
     font-family: news706 bt;
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     font-size: 2.5rem;
     color: rgb(100, 149, 237);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(180, 200, 255) 40%, rgb(100, 149, 237) 100%);
 }
 
 .isi {
     text-align: center;
     font-size: 17px;
-    color: #5a5a5a;;
+    color: #ffffff;;
     font-family: poppins semibold;
 }
 
@@ -92,16 +84,12 @@ body {
     background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(180, 200, 255) 40%, rgb(100, 149, 237) 100%);
     padding-bottom: 10px;
     color: rgb(100, 149, 237);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .riwayatpendidikan_a {
     font-family: poppins semibold;
     color: white;
-}
-
-.modal-dialog {
-    color: black;
 }
 
 .TK {
@@ -144,15 +132,60 @@ body {
     color: rgb(31, 31, 31);
 }
 
+.text_project {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: news706 bt;
+    text-shadow: 2px 2px 2px rgba(1, 1, 1, 0.2);
+    padding-top: 50px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+  
+.card-body {
+    text-align: center;
+}
+  
+.card-laundry {
+    width: 300px;
+    height: auto;
+}
+
+.card-title-1,
+.card-title-2,
+.card-title-3,
+.card-title-4,
+.card-title-5 {
+    font-family: poppins;
+    font-size: 15px;
+}
+
+
 .finished {
     transform: translateY(15px);
 }
 
-.contact {
-    font-family: news706 bt;
+.text_contact {
+    text-align: center;
     color: rgb(100, 149, 237);
+    font-family: news706 bt;
+    text-shadow: 2px 2px 2px rgba(1, 1, 1, 0.2);
+    margin-bottom: 50px;
+}
+
+.contact {
     position: relative;
     margin-top: -10px;
+    color: rgb(100, 149, 237);
+    font-family: poppins semibold;
     background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -186,4 +219,122 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: transparent;
+}
+
+/* Responsif Hp */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 0%);
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        font-size: 15px;
+        font-family: poppins semibold;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .profileimage {
+        width: 170px;
+        height: auto;
+    }
+
+    .profile {
+        position: relative;
+        top: -30px;
+    }
+
+    .h2 {
+        position: relative;
+        bottom: -10px;
+        font-size: 20px;
+        font-style: oblique;
+    }
+
+    .h5 {
+        position: relative;
+        bottom: -10px;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .text_biodata {
+        position: relative;
+        bottom: -30px;
+    }
+
+    .biodata {
+        position: relative;
+        top: -5px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 15px;
+        padding-bottom: 50px;
+    }
+
+    .isi {
+        position: relative;
+        bottom: -30px;
+        background-color: rgba(255, 255, 255, 0.847);
+        border-radius: 15px;
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: rgb(91, 91, 91);
+        text-shadow: none;
+    }
+
+    .riwayatpendidikan {
+        background-color: transparent;
+        top: -5px;
+        position: relative;
+    }
+
+    .text_riwayatpendidikan {
+        position: relative;
+        bottom: -30px;
+    }
+
+    .riwayatpendidikan_a {
+        position: relative;
+        bottom: -20px;
+    }
+
+    .card {
+        margin: 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .KKK, .IE, .GL, .F, .PHP, .RI, .IA, .HNY {
+        border-radius: 10px;
+    }
+
+    .card-title-1, .card-title-2, .card-title-3,
+    .card-title-4, .card-title-5 {
+    font-family: poppins;
+    font-size: 20px;
+    }
+
+    .text_contact {
+        margin-bottom: 50px;
+    }
+
+    .contact {
+        position: relative;
+        bottom: -5px;
+    }
+
+    .modal-dialog {
+        color: black;
+        text-shadow: none;
+        background-color: black;
+    }
 }
