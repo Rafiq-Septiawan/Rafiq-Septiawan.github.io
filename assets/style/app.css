@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Poppins';
     src: url('fonts/Poppins-Regular.woff2') format('woff2'),
-         url('fonts/Poppins-Regular.woff') format('woff');
+         url('fonts/Poppins-Regular.woff') format('woff'),
+         url('fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +10,8 @@
 @font-face {
     font-family: 'News701 BT';
     src: url('fonts/News701-BT.woff2') format('woff2'),
-         url('fonts/News701-BT.woff') format('woff');
+         url('fonts/News701-BT.woff') format('woff'),
+         url('fonts/News701-BT.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +19,8 @@
 @font-face {
     font-family: 'News706 BT';
     src: url('fonts/News706-BT.woff2') format('woff2'),
-         url('fonts/News706-BT.woff') format('woff');
+         url('fonts/News706-BT.woff') format('woff'),
+         url('fonts/News706-BT.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -275,7 +278,15 @@ body.modal-open {
 /* Responsif Hp */
 @media (max-width: 480px) {
     body {
+        font-family: 'Poppins', sans-serif;
         background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 0%);
+    }
+    
+    h1, h2, h3 {
+        font-family: 'News701 BT', serif;
+    }
+    p {
+        font-family: 'poppins semibold', serif;
     }
     
     .navbar {
