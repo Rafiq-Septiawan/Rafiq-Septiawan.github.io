@@ -22,8 +22,15 @@
     font-style: normal;
 }
 
+* {
+    scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Webkit */
+}
+
 body {
-    font-family: 'Poppins', 'News701 BT', 'News706 BT', sans-serif;
     background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 0%);
 }
 
@@ -88,7 +95,7 @@ body {
     top: -5px;
     font-family: news706 bt;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 65px;
     font-size: 2.5rem;
     color: rgb(100, 149, 237);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -104,7 +111,6 @@ body {
 
 .riwayatpendidikan {
     position: relative;
-    top: -30px;
     font-family: news706 bt;
     background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(180, 200, 255) 40%, rgb(100, 149, 237) 100%);
     padding-bottom: 10px;
@@ -157,6 +163,25 @@ body {
     color: rgb(31, 31, 31);
 }
 
+.modal-dialog {
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+}
+
+.modal-header {
+    display: block;
+}
+  
+.modal-backdrop {
+    position: fixed !important;
+    background-color: rgb(0, 0, 0);
+}
+
+body.modal-open {
+    padding-right: 0 !important;
+    overflow: hidden !important; 
+}
+
 .text_project {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -166,10 +191,13 @@ body {
 }
 
 .card {
+    border-radius: 10px;
     margin: 10px;
 }
 
 .card img {
+    border-radius: 10px;
+    padding: 5px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -177,11 +205,6 @@ body {
   
 .card-body {
     text-align: center;
-}
-  
-.card-laundry {
-    width: 300px;
-    height: auto;
 }
 
 .card-title-1,
@@ -191,11 +214,6 @@ body {
 .card-title-5 {
     font-family: poppins;
     font-size: 15px;
-}
-
-
-.finished {
-    transform: translateY(15px);
 }
 
 .text_contact {
@@ -333,7 +351,7 @@ body {
     }
 
     .modal-dialog {
-        color: black;
+        color: rgb(0, 0, 0);
         text-shadow: none;
     }
 
