@@ -4,7 +4,7 @@
          url('fonts/Poppins-Regular.woff') format('woff'),
          url('fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: bold;
 }
 
 @font-face {
@@ -45,15 +45,45 @@ body {
 }
 
 .navbar {
-    border: none;
     margin: 0;
     padding: 0;
     background-color: white;
     text-align: center;
     font-size: 15px;
-    font-family: news701 bt;
+    font-family: 'News701 BT';
     display: flex;
     justify-content: center;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    color: rgb(31, 31, 31); 
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'News701 BT', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a::before {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(101, 155, 255, 0.461); 
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0); 
+    transform-origin: center;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
 }
 
 .profile {
@@ -285,6 +315,7 @@ body.modal-open {
     h1, h2, h3 {
         font-family: 'News701 BT', serif;
     }
+    
     p {
         font-family: 'poppins semibold', serif;
     }
@@ -301,6 +332,12 @@ body.modal-open {
         gap: 20px;
     }
 
+    .navbar a::before {
+        left: -10px;
+        right: -10px;
+        background-color: rgba(99, 147, 237, 0.644); 
+    }
+    
     .profileimage {
         width: 170px;
         height: auto;
