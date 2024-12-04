@@ -2,31 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-* {
-    scrollbar-width: none;
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
-
-*::-webkit-scrollbar {
-    display: none;
-}
-
 
 body {
-    background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 0%);
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(99, 148, 237) 5%);
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     background-color: white;
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
-    font-style: italic;  
+    font-style: italic;
     font-size: 15px;
     display: flex;
     justify-content: center;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
+
 
 .navbar a {
     position: relative;
@@ -83,16 +86,18 @@ body {
 
 .h2 {
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
-
+    position: relative;
+    bottom: -5px;
 }
 
 .h5 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: italic;
-
+    position: relative;
+    bottom: -5px;
 }
 
 .profileimage {
@@ -107,7 +112,7 @@ body {
 .profile h5 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-style: normal;  
+    font-style: italic;  
     color: rgb(255, 255, 255);
     transform: translateY(10px);
 }
@@ -118,8 +123,7 @@ body {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    padding-top: 60px;
-    padding-bottom: 65px;
+    padding-top: 80px;
     font-size: 2.5rem;
     color: rgb(100, 149, 237);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -127,8 +131,10 @@ body {
 }
 
 .isi {
+    padding-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     color: #ffffff;;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -138,6 +144,7 @@ body {
 
 .riwayatpendidikan {
     position: relative;
+    top: -5px;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -149,7 +156,7 @@ body {
 
 .riwayatpendidikan_a {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
     color: white;
 }
@@ -157,7 +164,7 @@ body {
 .TK {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     text-align: left;
     line-height: 1,5;
@@ -167,7 +174,7 @@ body {
 .SD {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     text-align: left;
     line-height: 1,5;
@@ -177,7 +184,7 @@ body {
 .SMP {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     text-align: left;
     line-height: 1,5;
@@ -187,7 +194,7 @@ body {
 .SMA {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     text-align: left;
     line-height: 1,5;
@@ -197,11 +204,17 @@ body {
 .UNIVERSITAS {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     text-align: left;
     line-height: 1,5;
     color: rgb(31, 31, 31);
+}
+
+.modal-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal
 }
 
 .modal-dialog {
@@ -269,6 +282,7 @@ body.modal-open {
     font-optical-sizing: auto;
     font-weight: 700;
     text-shadow: 2px 2px 2px rgba(1, 1, 1, 0.2);
+    padding-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -303,12 +317,12 @@ body.modal-open {
 }
 
 .icon a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 255);
 }
 
 .watermark {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -321,13 +335,13 @@ body.modal-open {
 /* Responsif Hp */
 @media (max-width: 480px) {
     body {
-        font-family: 'Poppins', sans-serif;
-        background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 0%);
+        background: linear-gradient(rgb(245, 245, 245) 0%, rgb(99, 148, 237) 5%);
     }
     
     .navbar {
         display: flex;
         justify-content: center;
+        position: fixed;
     }
 
     .navbar-nav {
@@ -337,11 +351,13 @@ body.modal-open {
         font-style: normal;
         flex-direction: row;
         gap: 20px;
+        padding: 3px 0;
     }
 
     .navbar a {
         margin: 5px;
-        font-size: 15px;
+        font-size: 13px;
+        padding: 3px 0; 
     }
     
     .navbar a::after {
@@ -362,7 +378,7 @@ body.modal-open {
         position: relative;
         bottom: -10px;
         font-size: 20px;
-        font-style: oblique;
+        font-style: bold;
     }
 
     .h5 {
@@ -373,6 +389,7 @@ body.modal-open {
     }
 
     .text_biodata {
+        padding-top: 50px;
         position: relative;
         bottom: -30px;
     }
@@ -380,7 +397,7 @@ body.modal-open {
     .biodata {
         position: relative;
         top: -5px;
-        font-size: 1.2rem;
+        font-size: 2rem;
         text-align: center;
         padding: 15px;
         padding-bottom: 50px;
@@ -393,14 +410,13 @@ body.modal-open {
         border-radius: 15px;
         margin: 0px;
         padding: 20px;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
         color: rgb(91, 91, 91);
         text-shadow: none;
+        font-size: 13px;
     }
 
     .riwayatpendidikan {
+        padding-top: 50px;
         background-color: transparent;
         top: -5px;
         position: relative;
@@ -458,4 +474,16 @@ body.modal-open {
         bottom: -5px;
     }
 
+    .icon {
+        position: relative;
+        bottom: -270px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .watermark {
+        position: relative;
+        bottom: -280px;
+        padding-bottom: 10px;
+    }
 }
